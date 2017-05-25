@@ -5,54 +5,112 @@
     width: 197px;
     height: 41px;
     background-color: $pr_color_op;
-    // opacity: 0.7;
+}
+h2{
+	font-size:30px;
 }
 
 header {
-    width: 100%;
     float: left;
-    .header_logo {
+        .header_logo {
+        // width: 35%;
         float: left;
     }
     .header_place {
+                        // width: 25%;
         float: left;
+        text-align:center;
     }
     .header_feedback {
-        float: left;
+                        // width: 25%;
+        float: right;
     }
+ul.cap {
+        font: 14px Verdana, Geneva, sans-serif;
+        text-align: justify;
+
+        /* Обнуляем для родителя*/
+        line-height: 0;
+        font-size: 1px; /* 1px для Opera */
+
+        /* Лекарство для IE6-7*/
+        text-justify: newspaper;
+        zoom:1;
+
+        /* Включаем в работу последнюю строку*/
+        text-align-last: justify;
+}
+        ul.cap:after {
+                        width: 100%;
+                        height: 0px;
+                        visibility: hidden;
+                        overflow: hidden;
+                        content: '';
+                        display: inline-block;
+
+        }
+                ul.cap li  {
+                        // background: #E76D13;
+                        // width: 98px;
+                        // height: 98px;
+                        display: inline-block;
+                        text-align: left;
+                        // border: 1px solid #000;
+
+                        /* Востанавливаем у потомков, кроме последнего*/
+                        line-height: normal;
+                        font-size: 14px;
+
+                        /* Без него в Opera будет отступ под элементами */
+                        vertical-align: middle;
+
+                        /* эмуляция inline-block для IE6-7*/
+                        //display : inline;
+                        //zoom : 1;
+                }
+
     .header_menu {
         display: block;
         float: left;
         background: $pr_color_n_o;
+
         ul {
-            li {
-                float: left;
-                margin: 1%;
-                list-style-type: disc;
-            }
-            li:first-child {
-                list-style-type: none;
-            }
+            text-align: justify;
+            line-height: 0;
+            font-size: 1px;
+            text-justify: newspaper;
+            zoom: 1;
+            text-align-last: justify;
+        }
+        ul:after {
+            width: 100%;
+            height: 0px;
+            visibility: hidden;
+            overflow: hidden;
+            content: "";
+            display: inline-block;
+        }
+        ul li {
+            display: inline-block;
+            text-align: left;
+            line-height: normal;
+            font-size: 14px;
+            vertical-align: top;
         }
     }
 }
 
 main {
-    width: 100%;
     float: left;
     .slider {
         .block_slider {
             .block_slider_it {
                 max-width: 320px;
-                // width: 100%;
                 height: 406px;
-                // background: url(../img/layer-58.png)-119px 0px no-repeat;
-                // transform: skewX(-16.5deg);
                 float: left;
                 img {
                     width: 136%;
                     height: auto;
-                    // transform: skewX(16.5deg);
                 }
             }
             .block_slider_it:first-child {
@@ -61,19 +119,15 @@ main {
         }
     }
     .line {
-        // width: 100%;
         height: 6px;
         background-color: rgb(253, 192, 41);
     }
     .block_form {
         width: 100%;
         height: 150px;
-        // background-color: rgba(255, 255, 255, .8);
-        // transform: skewX(-16.5deg);
         float: left;
         box-sizing: border-box;
         margin-top: -190px;
-        // opacity: 0.8;
         form {
             width: 90%;
             padding: 25px 33px;
@@ -155,7 +209,64 @@ main {
             }
         }
     }
-    .our_customers{
-    	float:left;
+    .our_customers {
+        float: left;
+        background-color: rgb(253, 192, 41);
+        .our_customers_title_l1 {
+            float: left;
+            text-align: center;
+        }
+        .our_customers_title_l2 {
+            text-align: center;
+            float: left;
+        }
+        .menu_tabs {
+            float: left;
+            #tabs {
+                float: left;
+                ul li {
+                    float: left;
+                    text-align: center;
+                }
+                #tabs-1,
+                #tabs-2,
+                #tabs-3,
+                #tabs-4 {
+                    background-color: rgba(255, 255, 255, 1);
+                    float: left;
+                    .our_customers_logo {
+                        position: relative;
+                        min-height: 137px;
+                        float: left;
+                        img {
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            position: absolute;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    float: left;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    .footer_logo {
+        float: left;
+    }
+    .footer_menu {
+        float: left;
+    }
+    .footer_place {
+        float: left;
+    }
+    .footer_feedback {
+        float: right;
     }
 }

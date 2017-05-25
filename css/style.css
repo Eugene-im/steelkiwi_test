@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* font-family: "pfdintextcondpro-regular"; */
 @font-face {
   font-family: "pfdintextcondpro-regular";
@@ -200,8 +201,11 @@ li {
   background-color: rgba(255, 132, 0, 0.7);
 }
 
+h2 {
+  font-size: 30px;
+}
+
 header {
-  width: 100%;
   float: left;
 }
 header .header_logo {
@@ -209,26 +213,72 @@ header .header_logo {
 }
 header .header_place {
   float: left;
+  text-align: center;
 }
 header .header_feedback {
-  float: left;
+  float: right;
+}
+header ul.cap {
+  font: 14px Verdana, Geneva, sans-serif;
+  text-align: justify;
+  /* Обнуляем для родителя*/
+  line-height: 0;
+  font-size: 1px;
+  /* 1px для Opera */
+  /* Лекарство для IE6-7*/
+  text-justify: newspaper;
+  zoom: 1;
+  /* Включаем в работу последнюю строку*/
+  text-align-last: justify;
+}
+header ul.cap:after {
+  width: 100%;
+  height: 0px;
+  visibility: hidden;
+  overflow: hidden;
+  content: '';
+  display: inline-block;
+}
+header ul.cap li {
+  display: inline-block;
+  text-align: left;
+  /* Востанавливаем у потомков, кроме последнего*/
+  line-height: normal;
+  font-size: 14px;
+  /* Без него в Opera будет отступ под элементами */
+  vertical-align: middle
+  /* эмуляция inline-block для IE6-7*/
 }
 header .header_menu {
   display: block;
   float: left;
   background: #ff8400;
 }
-header .header_menu ul li {
-  float: left;
-  margin: 1%;
-  list-style-type: disc;
+header .header_menu ul {
+  text-align: justify;
+  line-height: 0;
+  font-size: 1px;
+  text-justify: newspaper;
+  zoom: 1;
+  text-align-last: justify;
 }
-header .header_menu ul li:first-child {
-  list-style-type: none;
+header .header_menu ul:after {
+  width: 100%;
+  height: 0px;
+  visibility: hidden;
+  overflow: hidden;
+  content: "";
+  display: inline-block;
+}
+header .header_menu ul li {
+  display: inline-block;
+  text-align: left;
+  line-height: normal;
+  font-size: 14px;
+  vertical-align: top;
 }
 
 main {
-  width: 100%;
   float: left;
 }
 main .slider .block_slider .block_slider_it {
@@ -342,6 +392,69 @@ main .guarantee .guarantee_paragr .guarantee_paragr_img .guarantee_paragr_text {
 }
 main .our_customers {
   float: left;
+  background-color: #fdc029;
+}
+main .our_customers .our_customers_title_l1 {
+  float: left;
+  text-align: center;
+}
+main .our_customers .our_customers_title_l2 {
+  text-align: center;
+  float: left;
+}
+main .our_customers .menu_tabs {
+  float: left;
+}
+main .our_customers .menu_tabs #tabs {
+  float: left;
+}
+main .our_customers .menu_tabs #tabs ul li {
+  float: left;
+  text-align: center;
+}
+main .our_customers .menu_tabs #tabs #tabs-1,
+main .our_customers .menu_tabs #tabs #tabs-2,
+main .our_customers .menu_tabs #tabs #tabs-3,
+main .our_customers .menu_tabs #tabs #tabs-4 {
+  background-color: white;
+  float: left;
+}
+main .our_customers .menu_tabs #tabs #tabs-1 .our_customers_logo,
+main .our_customers .menu_tabs #tabs #tabs-2 .our_customers_logo,
+main .our_customers .menu_tabs #tabs #tabs-3 .our_customers_logo,
+main .our_customers .menu_tabs #tabs #tabs-4 .our_customers_logo {
+  position: relative;
+  min-height: 137px;
+  float: left;
+}
+main .our_customers .menu_tabs #tabs #tabs-1 .our_customers_logo img,
+main .our_customers .menu_tabs #tabs #tabs-2 .our_customers_logo img,
+main .our_customers .menu_tabs #tabs #tabs-3 .our_customers_logo img,
+main .our_customers .menu_tabs #tabs #tabs-4 .our_customers_logo img {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+}
+
+footer {
+  float: left;
+  background-color: black;
+  color: white;
+}
+footer .footer_logo {
+  float: left;
+}
+footer .footer_menu {
+  float: left;
+}
+footer .footer_place {
+  float: left;
+}
+footer .footer_feedback {
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
