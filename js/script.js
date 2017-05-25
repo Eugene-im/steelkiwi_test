@@ -9,3 +9,4 @@ $('.about_our_equip__item_slide').slick({
   slidesToShow: 1,
   slidesToScroll: 1
 });
+$('img.myImage1').zoomify({ scale: 1 });

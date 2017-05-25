@@ -6,6 +6,7 @@
     <title>ПП Ресурс</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/zoomify.min.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/jquery-ui.js"></script>
@@ -171,7 +172,7 @@
             <div class="guarantee span_12_of_12">
                 <div class="content">
                     <div class="guarantee_title span_12_of_12">Гарантируем качество изделий</div>
-                    <div class="guarantee_img span_5_of_12"><img src="img/layer-40.png" alt=""></div>
+                    <div class="guarantee_img span_5_of_12"><img class="myImage1" src="img/layer-40.png" alt=""></div>
                     <div class="guarantee_paragr span_7_of_12">
                         <div class="guarantee_paragr_img span_2_of_12"><img src="img/iso-9001.png" alt=""></div>
                         <div class="guarantee_paragr_text span_10_of_12">Производство сертифицировано ГОСТ ISO 9001</div>
@@ -194,10 +195,26 @@
                 <div class="menu_tabs span_12_of_12">
                     <div id="tabs" class="span_12_of_12">
                         <ul class="content">
-                            <li class="span_3_of_12"><a href="#tabs-1">Машиностроительные предприятия</a></li>
-                            <li class="span_3_of_12"><a href="#tabs-2">Производители пишевой продукции</a></li>
-                            <li class="span_3_of_12"><a href="#tabs-3">предприятия специального машиностроения</a></li>
-                            <li class="span_3_of_12"><a href="#tabs-4">Оборонные предприятия</a></li>
+                            <li class="span_3_of_12">
+                                <a href="#tabs-1">
+                                    <div>Машиностроительные предприятия</div>
+                                </a>
+                            </li>
+                            <li class="span_3_of_12">
+                                <a href="#tabs-2">
+                                    <div>Производители пишевой продукции</div>
+                                </a>
+                            </li>
+                            <li class="span_3_of_12">
+                                <a href="#tabs-3">
+                                    <div>предприятия специального машиностроения</div>
+                                </a>
+                            </li>
+                            <li class="span_3_of_12">
+                                <a href="#tabs-4">
+                                    <div>Оборонные предприятия</div>
+                                </a>
+                            </li>
                         </ul>
                         <div id="tabs-1" class="span_12_of_12">
                             <div class="content">
@@ -242,37 +259,51 @@
                     </div>
                 </div>
             </div>
-    </div>
-    </main>
-    <footer class="span_12_of_12">
-        <div class="content">
-            <div class="footer_logo span_2_of_12"><img src="img/--------------2-1-copy.png" alt=""></div>
-            <div class="footer_menu span_2_of_12">
-                <ul>
-                    <li><a href="#">Механообработка деталей</a></li>
-                    <li><a href="#">Токарные работы</a></li>
+            <!-- </div> -->
+        </main>
+        <footer class="span_12_of_12">
+            <div class="content">
+                <ul class="cap">
+                    <li class="span_2_of_12">
+                        <div class="footer_logo"><img src="img/--------------2-1-copy.png" alt=""></div>
+                    </li>
+                    <li class="span_2_of_12">
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">Механообработка деталей</a></li>
+                                <li><a href="#">Токарные работы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="span_2_of_12">
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">Фрезеровка деталей</a></li>
+                                <li><a href="#">Фрезерный работы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="span_3_of_12">
+                        <div class="footer_place">
+                            <p>г. Санкт-Петербург, Колпино
+                                <br/>Ижорский завод, пр. Ленина, д.1</p>
+                        </div>
+                    </li>
+                    <li class="span_2_of_12">
+                        <div class="footer_feedback">
+                            <div class="feedback__phone"><a href="tel:88000000000">8 800 000 00 00</a></div>
+                            <div class="feedback_button">написать директору</div>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div class="footer_menu span_2_of_12">
-                <ul>
-                    <li><a href="#">Фрезеровка деталей</a></li>
-                    <li><a href="#">Фрезерный работы</a></li>
-                </ul>
-            </div>
-            <div class="footer_place span_3_of_12">
-                <p>г. Санкт-Петербург, Колпино
-                    <br/>Ижорский завод, пр. Ленина, д.1</p>
-            </div>
-            <div class="footer_feedback span_2_of_12">
-                <div class="feedback__phone"><a href="tel:88000000000">8 800 000 00 00</a></div>
-                <div class="feedback_button">написать директору</div>
-            </div>
-        </div>
-    </footer>
+        </footer>
     </div>
 </body>
 <script src="js/tabs.js"></script>
 <script src="js/slick.js"></script>
+<script src="js/zoomify.min.js"></script>
+<!-- <script src="js/zoomify.min.js"></script> -->
 <script src="js/script.js"></script>
 
 </html>

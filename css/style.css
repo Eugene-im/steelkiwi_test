@@ -211,20 +211,7 @@ h2 {
   font-size: 30px;
 }
 
-header {
-  float: left;
-}
-header .header_logo {
-  float: left;
-}
-header .header_place {
-  float: left;
-  text-align: center;
-}
-header .header_feedback {
-  float: right;
-}
-header ul.cap {
+ul.cap {
   font: 14px Verdana, Geneva, sans-serif;
   text-align: justify;
   /* Обнуляем для родителя*/
@@ -237,7 +224,8 @@ header ul.cap {
   /* Включаем в работу последнюю строку*/
   text-align-last: justify;
 }
-header ul.cap:after {
+
+ul.cap:after {
   width: 100%;
   height: 0px;
   visibility: hidden;
@@ -245,7 +233,8 @@ header ul.cap:after {
   content: '';
   display: inline-block;
 }
-header ul.cap li {
+
+ul.cap li {
   display: inline-block;
   text-align: left;
   /* Востанавливаем у потомков, кроме последнего*/
@@ -254,6 +243,20 @@ header ul.cap li {
   /* Без него в Opera будет отступ под элементами */
   vertical-align: middle
   /* эмуляция inline-block для IE6-7*/
+}
+
+header {
+  float: left;
+}
+header .header_logo {
+  float: left;
+}
+header .header_place {
+  float: left;
+  text-align: center;
+}
+header .header_feedback {
+  float: right;
 }
 header .header_menu {
   display: block;
@@ -416,6 +419,10 @@ main .our_customers .menu_tabs #tabs {
 }
 main .our_customers .menu_tabs #tabs ul li {
   float: left;
+  text-align: center;
+  margin: 0 0.6%;
+}
+main .our_customers .menu_tabs #tabs ul li div {
   text-align: center;
 }
 main .our_customers .menu_tabs #tabs #tabs-1,
