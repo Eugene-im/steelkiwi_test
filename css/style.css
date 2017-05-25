@@ -68,7 +68,6 @@ table {
 
 body {
   font: 12px "pfdintextcondpro-regular";
-  font-size: 12px !important;
 }
 
 .wrapper {
@@ -88,7 +87,7 @@ li {
 }
 
 .content {
-  max-width: 1188px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -194,6 +193,155 @@ li {
   .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
     width: 100%;
   }
+}
+.item_button {
+  width: 197px;
+  height: 41px;
+  background-color: rgba(255, 132, 0, 0.7);
+}
+
+header {
+  width: 100%;
+  float: left;
+}
+header .header_logo {
+  float: left;
+}
+header .header_place {
+  float: left;
+}
+header .header_feedback {
+  float: left;
+}
+header .header_menu {
+  display: block;
+  float: left;
+  background: #ff8400;
+}
+header .header_menu ul li {
+  float: left;
+  margin: 1%;
+  list-style-type: disc;
+}
+header .header_menu ul li:first-child {
+  list-style-type: none;
+}
+
+main {
+  width: 100%;
+  float: left;
+}
+main .slider .block_slider .block_slider_it {
+  max-width: 320px;
+  height: 406px;
+  float: left;
+}
+main .slider .block_slider .block_slider_it img {
+  width: 136%;
+  height: auto;
+}
+main .slider .block_slider .block_slider_it:first-child {
+  margin-left: -115px;
+}
+main .line {
+  height: 6px;
+  background-color: #fdc029;
+}
+main .block_form {
+  width: 100%;
+  height: 150px;
+  float: left;
+  box-sizing: border-box;
+  margin-top: -190px;
+}
+main .block_form form {
+  width: 90%;
+  padding: 25px 33px;
+  float: left;
+  -webkit-transform: skewX(-16.5deg);
+      -ms-transform: skewX(-16.5deg);
+          transform: skewX(-16.5deg);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+}
+main .block_form form div {
+  -webkit-transform: skewX(16.5deg);
+      -ms-transform: skewX(16.5deg);
+          transform: skewX(16.5deg);
+}
+main .block_form form .form_title_l1 {
+  color: black;
+  font-family: "pfdintextcondpro-regular";
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .block_form form .form_title_l2 {
+  color: black;
+  font-family: "pfdintextcondpro-regular";
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .block_form form input {
+  -webkit-transform: skewX(16.5deg);
+      -ms-transform: skewX(16.5deg);
+          transform: skewX(16.5deg);
+  float: left;
+  height: 29px;
+  margin: 0.4%;
+}
+main .block_form form .item_button {
+  float: left;
+  margin: 0.4%;
+}
+main .block_form .block_form_ps {
+  width: auto;
+  float: right;
+  text-align: right;
+  z-index: 9999999999;
+  position: relative;
+}
+main .about {
+  float: left;
+}
+main .about .about_what_we_can {
+  float: left;
+}
+main .about .about_what_we_can .about_what_we_can__item {
+  float: left;
+}
+main .about .about_what_we_can .about_what_we_can__item .what_we_can__item_img {
+  float: left;
+}
+main .about .about_what_we_can .about_what_we_can__item .what_we_can__item_text {
+  float: left;
+}
+main .about .about_our_equip {
+  float: left;
+}
+main .guarantee {
+  float: left;
+  background-color: #2b2a28;
+}
+main .guarantee .guarantee_title {
+  float: left;
+  text-align: center;
+}
+main .guarantee .guarantee_img {
+  float: left;
+}
+main .guarantee .guarantee_paragr {
+  float: left;
+}
+main .guarantee .guarantee_paragr .guarantee_paragr_img {
+  float: left;
+}
+main .guarantee .guarantee_paragr .guarantee_paragr_img .guarantee_paragr_text {
+  float: left;
+}
+main .our_customers {
+  float: left;
 }
 
 /*# sourceMappingURL=style.css.map */

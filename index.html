@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>ПП Ресурс</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+<script src="js/jquery-ui.js"></script>
+    <script src="js/tabs.js"></script>
 </head>
 
 <body>
@@ -20,77 +24,98 @@
                         <br/>
                     </p>
                 </div>
-                <div class="header_feedback">
+                <div class="header_feedback span_3_of_12">
                     <div class="feedback__phone"><a href="tel:88000000000">8 800 000 00 00</a></div>
                     <div class="feedback_button">Обратный звонок</div>
                 </div>
             </div>
-            <div class="header_menu">
-                <ul>
-                    <li>О компании</li>
-                    <li>оборудование</li>
-                    <li>виды работ</li>
-                    <li>Изделия</li>
-                    <li>рекомендации</li>
-                    <li>вакансии</li>
-                    <li>контакты</li>
-                </ul>
+            <div class="header_menu span_12_of_12">
+                <div class="content">
+                    <ul>
+                        <li>О компании</li>
+                        <li>оборудование</li>
+                        <li>виды работ</li>
+                        <li>Изделия</li>
+                        <li>рекомендации</li>
+                        <li>вакансии</li>
+                        <li>контакты</li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>
-            <div class="slider">
-                <div class="slider_it"><img src="img/layer-59.png" alt=""></div>
-                <div class="slider_it"><img src="img/layer-58.png" alt=""></div>
-                <div class="slider_it"><img src="img/layer-57.png" alt=""></div>
-                <div class="slider_it"><img src="img/layer-56.png" alt=""></div>
-                <div class="slider_it"><img src="img/layer-58.png" alt=""></div>
-                <div class="slider_it"><img src="img/layer-58.png" alt=""></div>
+            <div class="slider span_12_of_12">
+                <div class="block_slider">
+                    <div class="block_slider_it"><img src="img/layer-59.png" alt=""></div>
+                    <div class="block_slider_it"><img src="img/layer-58.png" alt=""></div>
+                    <div class="block_slider_it"><img src="img/layer-57.png" alt=""></div>
+                    <div class="block_slider_it"><img src="img/layer-49.png" alt=""></div>
+                    <!-- <div class="block_slider_it"><img src="img/layer-58.png" alt=""></div> -->
+                    <!-- <div class="block_slider_it"><img src="img/layer-58.png" alt=""></div> -->
+                </div>
+                <div class="block_form">
+                    <div class="content">
+                        <form action="">
+                            <div class="form_title_l1">Изготовление деталей из металла по вашим чертежам</div>
+                            <div class="form_title_l2">В поиске компании по металлообработке? Отправьте ваш запрос для оценки стоимости</div>
+                            <input type="text" placeholder="Ваше имя" required="">
+                            <input type="text" placeholder="Телефон" required="">
+                            <input type="text" placeholder="E-mail" required="">
+                            <div class="item_button">отправить</div>
+                        </form>
+                        <div class="block_form_ps">* Если требуется отправить чертеж, перейдите на <a href="#"><span>форму заказа</span></a></div>
+                    </div>
+                </div>
             </div>
-            <div class="line"></div>
-            <div class="about">
+            <div class="line span_12_of_12"></div>
+            <div class="about span_12_of_12">
                 <div class="content">
-                    <div class="about_what_we_can">
-                        <div class="about_what_we_can__item">
-                            <div class="what_we_can__item_img"><img src="img/1dsm6252.png" alt=""></div>
-                            <div class="what_we_can__item_text">
+                    <div class="about_what_we_can span_8_of_12">
+                        <div class="about_what_we_can__item span_12_of_12">
+                            <div class="what_we_can__item_img span_4_of_12"><img src="img/1dsm6252.png" alt=""></div>
+                            <div class="what_we_can__item_text span_8_of_12">
                                 <h2>text</h2>
                                 <p>text</p>
                                 <div class="item_button">узнать больше</div>
                             </div>
                         </div>
-                        <div class="about_what_we_can__item">
-                            <div class="what_we_can__item_img"><img src="img/1dsm6252.png" alt=""></div>
-                            <div class="what_we_can__item_text">
+                        <div class="about_what_we_can__item span_12_of_12">
+                            <div class="what_we_can__item_img span_4_of_12"><img src="img/1dsm6252.png" alt=""></div>
+                            <div class="what_we_can__item_text span_8_of_12">
                                 <h2>text</h2>
                                 <p>text</p>
                                 <div class="item_button">узнать больше</div>
                             </div>
                         </div>
-                        <div class="about_what_we_can__item">
-                            <div class="what_we_can__item_img"><img src="img/1dsm6252.png" alt=""></div>
-                            <div class="what_we_can__item_text">
+                        <div class="about_what_we_can__item span_12_of_12">
+                            <div class="what_we_can__item_img span_4_of_12"><img src="img/1dsm6252.png" alt=""></div>
+                            <div class="what_we_can__item_text span_8_of_12">
                                 <h2>text</h2>
                                 <p>text</p>
                                 <div class="item_button">узнать больше</div>
                             </div>
                         </div>
-                        <div class="about_what_we_can__item">
-                            <div class="what_we_can__item_img"><img src="img/1dsm6252.png" alt=""></div>
-                            <div class="what_we_can__item_text">
+                        <div class="about_what_we_can__item span_12_of_12">
+                            <div class="what_we_can__item_img span_4_of_12"><img src="img/1dsm6252.png" alt=""></div>
+                            <div class="what_we_can__item_text span_8_of_12">
                                 <h2>text</h2>
                                 <p>text</p>
                                 <div class="item_button">узнать больше</div>
                             </div>
                         </div>
                     </div>
-                    <div class="about_our_equip">
+                    <div class="about_our_equip span_4_of_12">
                         <div class="about_our_equip__item">
                             <div class="about_our_equip__item_text">
                                 <h2>text</h2>
                                 <div class="about_our_equip__item_slide">
                                     <div>
                                         <img src="img/layer-38.png" alt="">
+                                    </div>
+                                    <div>
                                         <img src="img/layer-39.png" alt="">
+                                    </div>
+                                    <div>
                                         <img src="img/layer-38.png" alt="">
                                     </div>
                                 </div>
@@ -102,7 +127,11 @@
                                 <div class="about_our_equip__item_slide">
                                     <div>
                                         <img src="img/layer-38.png" alt="">
+                                    </div>
+                                    <div>
                                         <img src="img/layer-39.png" alt="">
+                                    </div>
+                                    <div>
                                         <img src="img/layer-38.png" alt="">
                                     </div>
                                 </div>
@@ -111,100 +140,102 @@
                     </div>
                 </div>
             </div>
-            <div class="guarantee">
+            <div class="guarantee span_12_of_12">
                 <div class="content">
-                    <div class="guarantee_title"></div>
-                    <div class="guarantee_img"><img src="" alt=""></div>
-                    <div class="guarantee_paragr">
-                        <div class="guarantee_paragr_img"><img src="" alt=""></div>
-                        <div class="guarantee_paragr_text"></div>
+                    <div class="guarantee_title span_12_of_12">Гарантируем качество изделий</div>
+                    <div class="guarantee_img span_5_of_12"><img src="img/layer-40.png" alt=""></div>
+                    <div class="guarantee_paragr span_7_of_12">
+                        <div class="guarantee_paragr_img span_2_of_12"><img src="img/iso-9001.png" alt=""></div>
+                        <div class="guarantee_paragr_text span_10_of_12">Производство сертифицировано ГОСТ ISO 9001</div>
                     </div>
-                    <div class="guarantee_paragr">
-                        <div class="guarantee_paragr_img"><img src="" alt=""></div>
-                        <div class="guarantee_paragr_text"></div>
+                    <div class="guarantee_paragr span_7_of_12">
+                        <div class="guarantee_paragr_img span_2_of_12"><img src="img/forma-2.png" alt=""></div>
+                        <div class="guarantee_paragr_text span_10_of_12">Заводское качество и низкие цены</div>
+                    </div>
+                    <div class="guarantee_paragr span_7_of_12">
+                        <div class="guarantee_paragr_img span_2_of_12"><img src="img/forma-1.png" alt=""></div>
+                        <div class="guarantee_paragr_text span_10_of_12">Обновляемый и модернизируемый парк станков</div>
                     </div>
                 </div>
             </div>
-            <div class="our_customers">
+            <div class="our_customers span_12_of_12">
                 <div class="content">
-                    <div class="our_customers_title_l1">Наши заказчики</div>
-                    <div class="our_customers_title_l2">Предприятия крупного, среднего и точного машиностроения</div>
-                    <div class="menu_tabs">
-                        <div class="content">
-                            <div id="tabs" class="clear">
+                    <div class="our_customers_title_l1 span_12_of_12">Наши заказчики</div>
+                    <div class="our_customers_title_l2 span_12_of_12">Предприятия крупного, среднего и точного машиностроения</div>
+                    <div class="menu_tabs span_12_of_12">
+                            <div id="tabs" class="span_12_of_12">
                                 <ul>
-                                    <li><a href="#tabs-1">Машиностроительные предприятия</a></li>
-                                    <li><a href="#tabs-2">Производители пишевой продукции</a></li>
-                                    <li><a href="#tabs-3">предприятия специального машиностроения</a></li>
-                                    <li><a href="#tabs-4">Оборонные предприятия</a></li>
+                                    <li class="span_3_of_12"><a href="#tabs-1">Машиностроительные предприятия</a></li>
+                                    <li class="span_3_of_12"><a href="#tabs-2">Производители пишевой продукции</a></li>
+                                    <li class="span_3_of_12"><a href="#tabs-3">предприятия специального машиностроения</a></li>
+                                    <li class="span_3_of_12"><a href="#tabs-4">Оборонные предприятия</a></li>
                                 </ul>
                                 <div id="tabs-1">
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-26.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-27.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-28.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-31.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-30.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-29.png" alt=""></div>
                                 </div>
                                 <div id="tabs-2">
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-26.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-27.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-28.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-31.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-30.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-29.png" alt=""></div>
                                 </div>
                                 <div id="tabs-3">
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-26.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-27.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-28.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-31.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-30.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-29.png" alt=""></div>
                                 </div>
                                 <div id="tabs-4">
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
-                                    <div class="our_customers_logo"><img src="" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-26.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-27.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-28.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-31.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-30.png" alt=""></div>
+                                    <div class="our_customers_logo span_4_of_12"><img src="img/layer-29.png" alt=""></div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </main>
         <footer>
-        <div class="content">
-        	<div class="footer_logo"></div>
-        	<div class="footer_menu">
-        		<ul>
-        			<li></li>
-        			<li></li>
-        		</ul>
-        	</div>
-        	<div class="footer_menu">
-        		<ul>
-        			<li></li>
-        			<li></li>
-        		</ul>
-        	</div>
-
-        	<div class="footer_place">
-        		<p>г. Санкт-Петербург, Колпино <br/>Ижорский завод, пр. Ленина, д.1</p>
-        	</div>
-
-        	<div class="footer_feedback">
+            <div class="content">
+                <div class="footer_logo"></div>
+                <div class="footer_menu">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="footer_menu">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="footer_place">
+                    <p>г. Санкт-Петербург, Колпино
+                        <br/>Ижорский завод, пр. Ленина, д.1</p>
+                </div>
+                <div class="footer_feedback">
                     <div class="feedback__phone"><a href="tel:88000000000">8 800 000 00 00</a></div>
                     <div class="feedback_button">Обратный звонок</div>
                 </div>
-        </div>
+            </div>
         </footer>
     </div>
 </body>
 <script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/script.js"></script>
 
