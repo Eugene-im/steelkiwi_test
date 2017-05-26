@@ -270,6 +270,10 @@ ul.cap li {
   width: 20%;
 }
 
+.vvv {
+  cursor: pointer;
+}
+
 #triangle {
   width: 0;
   height: 0;
@@ -356,7 +360,7 @@ main .slider .block_slider .block_slider_it {
 }
 main .slider .block_slider .block_slider_it img {
   width: 136%;
-  height: auto;
+  height: 100%;
 }
 main .slider .block_slider .block_slider_it:first-child {
   margin-left: -115px;

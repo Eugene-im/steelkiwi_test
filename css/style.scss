@@ -66,6 +66,10 @@ ul.cap li {
     width: 20%;
 }
 
+.vvv {
+    cursor: pointer;
+}
+
 #triangle {
     width: 0;
     height: 0;
@@ -152,7 +156,7 @@ main {
                 float: left;
                 img {
                     width: 136%;
-                    height: auto;
+                    height: 100%;
                 }
             }
             .block_slider_it:first-child {
@@ -404,7 +408,7 @@ footer {
         .feedback_button {
             text-decoration: underline;
             text-transform: uppercase;
-            cursor:pointer;
+            cursor: pointer;
         }
         .feedback_phone {
             width: 80%;
