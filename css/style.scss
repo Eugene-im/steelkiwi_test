@@ -10,11 +10,13 @@
     div {
         display: table-cell;
         vertical-align: middle;
+        text-transform: uppercase;
     }
 }
 
 h2 {
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 ul.cap {
@@ -57,47 +59,120 @@ ul.cap li {
     //zoom : 1;
 }
 
+.xxx {
+    width: 27%;
+}
+
+.yyy {
+    width: 20%;
+}
+
+.zzz {
+    position: relative
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 23.5px solid transparent;
+    border-right: 23.5px solid transparent;
+    border-top: 23.5px solid rgb(253, 192, 41);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1px auto 0;
+    display:none;
+}
+
+#tabs-1{
+
+}
+
+#tabs-2{
+	
+}
+
+#tabs-3{
+	
+}
+
+#tabs-4{
+	
+}
+// ul.content.ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header li.span_3_of_12.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab {
+//     a#ui-id-1.ui-tabs-anchor div {
+//         font-family: "pfdintextcondpro-regular";
+//     }
+//         a#ui-id-2.ui-tabs-anchor div {
+//         font-family: "pfdintextcondpro-regular";
+//     }
+//         a#ui-id-3.ui-tabs-anchor div {
+//         font-family: "pfdintextcondpro-regular";
+//     }
+//         a#ui-id-4.ui-tabs-anchor div {
+//         font-family: "pfdintextcondpro-regular";
+//     }
+// }
 header {
     float: left;
     .header_logo {
-        // width: 35%;
         float: left;
+        margin: 17px 0 23px;
     }
     .header_place {
-        // width: 25%;
         float: left;
         text-align: center;
+        >div {
+            width: 45%;
+            margin: 0 auto;
+        }
     }
     .header_feedback {
-        // width: 25%;
         float: right;
+        .feedback_phone {
+            width: 64%;
+            margin: 0 auto;
+            margin-bottom: 13px;
+            // font-weight: 400;
+            letter-spacing: -3px;
+            a {
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                // letter-spacing:-0.9px
+            }
+        }
+        .feedback_button {
+            width: 210px;
+            height: 40px;
+            // background-color: rgb(255, 132, 0);
+            display: table;
+            text-align: center;
+            background-color: $pr_color_n_o;
+            div {
+                padding: 0 5%;
+                font-size: 18px;
+                color: rgba(255, 255, 255, 1);
+                // width:50%;
+                // margin: 0 auto;
+                text-transform: uppercase;
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
     }
     .header_menu {
         display: block;
         float: left;
         background: $pr_color_n_o;
         ul {
-            text-align: justify;
-            line-height: 0;
-            font-size: 1px;
-            text-justify: newspaper;
-            zoom: 1;
-            text-align-last: justify;
-        }
-        ul:after {
-            width: 100%;
-            height: 0px;
-            visibility: hidden;
-            overflow: hidden;
-            content: "";
-            display: inline-block;
-        }
-        ul li {
-            display: inline-block;
-            text-align: left;
-            line-height: normal;
-            font-size: 14px;
-            vertical-align: top;
+            margin: 15px 0;
+            li {
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: rgb(255, 255, 255);
+                // letter-spacing: -0.2px;
+            }
         }
     }
 }
@@ -131,26 +206,27 @@ main {
         box-sizing: border-box;
         margin-top: -190px;
         form {
-            width: 90%;
-            padding: 25px 33px;
+            width: 83.5%;
+            padding: 25px 16px;
             float: left;
             transform: skewX(-16.5deg);
             background-color: rgba(255, 255, 255, .8);
             box-sizing: border-box;
-            div {
+            margin: 0 7%;
+            >div {
                 transform: skewX(16.5deg);
             }
             .form_title_l1 {
                 color: rgb(0, 0, 0);
-                font-family: "pfdintextcondpro-regular";
-                font-size: 23px;
+                // font-family: "pfdintextcondpro-regular";
+                font-size: 35px;
                 font-weight: 400;
                 text-transform: uppercase;
             }
             .form_title_l2 {
                 color: rgb(0, 0, 0);
-                font-family: "pfdintextcondpro-regular";
-                font-size: 13px;
+                // font-family: "pfdintextcondpro-regular";
+                font-size: 16px;
                 font-weight: 400;
                 text-transform: uppercase;
             }
@@ -159,10 +235,16 @@ main {
                 float: left;
                 height: 29px;
                 margin: 0.4%;
+                width: 179px;
             }
             .item_button {
                 float: left;
                 margin: 0.4%;
+                >div {
+                    font-size: 25px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
             }
         }
         .block_form_ps {
@@ -171,60 +253,110 @@ main {
             text-align: right;
             z-index: 9999999999;
             position: relative;
+            color: rgba(255, 255, 255, 1);
+            margin-right: 12%;
+            a {
+                color: rgba(255, 255, 255, 1);
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
         }
     }
     .about {
         float: left;
         .about_what_we_can {
             float: left;
+            margin: -7px 0 92px;
             .about_what_we_can__item {
-                float: left;
+                // float: left;
+                margin-top: 50px;
+                display: inline-block;
+                vertical-align: middle;
+                .item_text {
+                    margin: 27px 0;
+                }
                 .what_we_can__item_img {
-                    float: left;
+                    display: inline-block;
+                    vertical-align: middle;
+                    // float: left;
                 }
                 .what_we_can__item_text {
-                    float: left;
+                    // float: left;
+                    display: inline-block;
+                    vertical-align: middle;
                 }
             }
         }
         .about_our_equip {
             float: left;
-        }
-    }
-    .guarantee {
-        float: left;
-        background-color: rgb(43, 42, 40);
-        .guarantee_title {
-            float: left;
-            text-align: center;
-        }
-        .guarantee_img {
-            float: left;
-//             img{
-//             	width: 100%;
-// height: auto;
-            // }
-        }
-        .guarantee_paragr {
-            float: left;
-            .guarantee_paragr_img {
-                float: left;
-                .guarantee_paragr_text {
-                    float: left;
+            margin-top: 12px;
+            .about_our_equip__item {
+                margin-top: 50px;
+                .about_our_equip__item_text {
+                    h2 {
+                        text-align: center
+                    }
+                    .guarantee {
+                        max-width: 239px;
+                        width: 100%;
+                        max-height: 346px;
+                        height: auto;
+                        margin: 38px auto 107px;
+                    }
+                    .equip {
+                        max-width: 262px;
+                        width: 100%;
+                        max-height: 262px;
+                        height: auto;
+                        margin: 87px auto 0;
+                    }
+                    .about_our_equip__item_slide {
+                        img {
+                            width: 100%;
+                            z-index: 9999999;
+                        }
+                    }
                 }
             }
         }
     }
+    // .guarantee {
+    //     float: left;
+    //     background-color: rgb(43, 42, 40);
+    //     .guarantee_title {
+    //         float: left;
+    //         text-align: center;
+    //     }
+    //     .guarantee_img {
+    //         float: left;
+    //     }
+    //     .guarantee_paragr {
+    //         float: left;
+    //         .guarantee_paragr_img {
+    //             float: left;
+    //             .guarantee_paragr_text {
+    //                 float: left;
+    //             }
+    //         }
+    //     }
+    // }
     .our_customers {
         float: left;
         background-color: rgb(253, 192, 41);
         .our_customers_title_l1 {
             float: left;
             text-align: center;
+            font-size: 35px;
+            font-family: "pfdintextcondpro-light";
+            text-transform: uppercase;
         }
         .our_customers_title_l2 {
             text-align: center;
             float: left;
+            font-size: 22px;
+            font-weight: 300;
+            // font-style: italic;
+            font-family: "pfdintextcondpro-light-it";
         }
         .menu_tabs {
             float: left;
@@ -234,8 +366,21 @@ main {
                     float: left;
                     text-align: center;
                     margin: 0 0.6%;
-                    div {
+                    a div {
                         text-align: center;
+                        color: rgb(0, 0, 0);
+                        font-family: "pfdintextcondpro-bold";
+                        font-size: 22px;
+                        // font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+                ul li.ui-tabs-active {
+                    a>div {
+                        font-family: "pfdintextcondpro-light";
+                    	#triangle{
+                    		display:block;
+                    	}
                     }
                 }
                 #tabs-1,

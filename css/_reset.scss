@@ -1,18 +1,30 @@
 /* font-family: "pfdintextcondpro-regular"; */
 @font-face {
+  font-family: "pfdintextcondpro-light";
+  src: url("../fonts/pfdintextcondpro-light-webfont.ttf");
+}
+/* font-family: "pfdintextcondpro-regular"; */
+
+@font-face {
+  font-family: "pfdintextcondpro-light-it";
+  src: url("../fonts/pfdintextcomppro-lightitalic.ttf");
+}
+
+/* font-family: "pfdintextcondpro-regular"; */
+@font-face {
   font-family: "pfdintextcondpro-regular";
-  src: url("../fonts/LCD2B/pfdintextcondpro-regular.ttf");
+  src: url("../fonts/pfdintextcondpro-regular-webfont.ttf");
 }
 
 /* font-family: "pfdintextcondpro-italic"; */
 @font-face {
   font-family: "pfdintextcondpro-italic";
-  src: url("../fonts/LCD2B/pfdintextcondpro-italic.ttf");
+  src: url("../fonts/pfdintextcomppro-lightitalic.ttf");
 }
 /* font-family: "RobotoBold"; */
 @font-face {
   font-family: "pfdintextcondpro-bold";
-  src: url("../fonts/LCD2B/pfdintextcondpro-bold.ttf");
+  src: url("../fonts/pfdintextcondpro-bold.ttf");
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -69,7 +81,9 @@ table {
 }
 
 body {
-  font: 12px "pfdintextcondpro-regular";
+  font: 18px "pfdintextcondpro-regular", sans-serif;
+  // letter-spacing: -0.7px;
+// font-stretch: extra-condensed;
   // font-size: 12px !important;
 }
 
