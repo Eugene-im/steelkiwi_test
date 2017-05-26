@@ -99,6 +99,7 @@ li {
 .content {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 0 1%;
 }
 
 .clear:after,
@@ -218,6 +219,10 @@ li {
   cursor: pointer;
 }
 
+.item_button:hover {
+  background-color: #ff4e00;
+}
+
 h2 {
   font-size: 30px;
   text-transform: uppercase;
@@ -321,6 +326,10 @@ header .header_feedback .feedback_button div {
   text-transform: uppercase;
   display: table-cell;
   vertical-align: middle;
+  cursor: pointer;
+}
+header .header_feedback .feedback_button:hover {
+  background-color: #ff4e00;
 }
 header .header_menu {
   display: block;
@@ -364,8 +373,7 @@ main .block_form {
   margin-top: -190px;
 }
 main .block_form form {
-  width: 83.5%;
-  padding: 25px 16px;
+  padding: 20px 16px 16px;
   float: left;
   -webkit-transform: skewX(-16.5deg);
       -ms-transform: skewX(-16.5deg);
@@ -373,6 +381,8 @@ main .block_form form {
   background-color: rgba(255, 255, 255, 0.8);
   box-sizing: border-box;
   margin: 0 7%;
+  width: 100%;
+  max-width: 885.3px;
 }
 main .block_form form > div {
   -webkit-transform: skewX(16.5deg);
@@ -390,6 +400,13 @@ main .block_form form .form_title_l2 {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+}
+main .block_form form .lable {
+  float: left;
+}
+main .block_form form .aaa {
+  width: auto;
+  height: auto;
 }
 main .block_form form input {
   -webkit-transform: skewX(16.5deg);
@@ -574,6 +591,7 @@ footer .footer_feedback {
 footer .footer_feedback .feedback_button {
   text-decoration: underline;
   text-transform: uppercase;
+  cursor: pointer;
 }
 footer .footer_feedback .feedback_phone {
   width: 80%;
