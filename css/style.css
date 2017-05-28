@@ -355,15 +355,12 @@ main {
 }
 main .slider .block_slider .block_slider_it {
   max-width: 320px;
+  width: 100%;
   height: 406px;
-  float: left;
 }
 main .slider .block_slider .block_slider_it img {
   width: 136%;
   height: 100%;
-}
-main .slider .block_slider .block_slider_it:first-child {
-  margin-left: -115px;
 }
 main .line {
   height: 6px;
@@ -375,6 +372,8 @@ main .block_form {
   float: left;
   box-sizing: border-box;
   margin-top: -190px;
+  z-index: 99999999999;
+  position: absolute;
 }
 main .block_form form {
   padding: 20px 16px 16px;
@@ -407,10 +406,14 @@ main .block_form form .form_title_l2 {
 }
 main .block_form form .lable {
   float: left;
+  width: 100%;
 }
 main .block_form form .aaa {
   width: auto;
   height: auto;
+  -webkit-transform: skewX(0);
+      -ms-transform: skewX(0);
+          transform: skewX(0);
 }
 main .block_form form input {
   -webkit-transform: skewX(16.5deg);
@@ -494,6 +497,61 @@ main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text 
 main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide img {
   width: 100%;
   z-index: 9999999;
+}
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-prev {
+  z-index: 999;
+  width: 0;
+  height: 0;
+  border-left: 9.5px solid transparent;
+  border-right: 9.5px solid transparent;
+  border-top: none;
+  border-bottom: 17px solid #ff9701;
+  position: absolute;
+  left: 46%;
+  top: 0;
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  margin-top: -24px;
+}
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-next {
+  z-index: 999;
+  width: 0;
+  height: 0;
+  border-left: 9.5px solid transparent;
+  border-right: 9.5px solid transparent;
+  border-bottom: none;
+  border-top: 17px solid #ff9701;
+  position: absolute;
+  left: 46%;
+  top: 100%;
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-prev:before {
+  content: none;
+}
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-next:before {
+  content: none;
+}
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-prev:hover:before,
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-prev:focus:before {
+  content: none;
+}
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-next:hover:before,
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-next:focus:before {
+  content: none;
+}
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-prev:hover,
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-prev:focus {
+  outline: none;
+  border-bottom-color: #ff4e00;
+}
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-next:hover,
+main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-next:focus {
+  outline: none;
+  border-top-color: #ff4e00;
 }
 main .our_customers {
   float: left;

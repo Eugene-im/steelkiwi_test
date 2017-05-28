@@ -297,9 +297,9 @@
                 targetLeft = Math.ceil(targetLeft);
 
                 if (_.options.vertical === false) {
-                    animProps[_.animType] = 'translate3d(' + targetLeft + 'px, 0px, 0px)';
+                    animProps[_.animType] = 'translate3d(' + targetLeft + 'px, 0px, 0px) + rotateY(180deg)';
                 } else {
-                    animProps[_.animType] = 'translate3d(0px,' + targetLeft + 'px, 0px)';
+                    animProps[_.animType] = 'translate3d(0px,' + targetLeft + 'px, 0px) + rotateY(180deg)';
                 }
                 _.$slideTrack.css(animProps);
 

@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <title>ПП Ресурс</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="css/zoomify.min.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/jquery-ui.js"></script>
 </head>
@@ -63,7 +66,7 @@
         </header>
         <main class="span_12_of_12">
             <div class="slider span_12_of_12">
-                <div class="block_slider">
+                <div class="block_slider owl-carousel owl-theme">
                     <div class="block_slider_it"><img src="img/layer-59.png" alt=""></div>
                     <div class="block_slider_it"><img src="img/layer-58.png" alt=""></div>
                     <div class="block_slider_it"><img src="img/layer-57.png" alt=""></div>
@@ -72,8 +75,6 @@
                     <div class="block_slider_it"><img src="img/layer-58.png" alt=""></div>
                     <div class="block_slider_it"><img src="img/layer-57.png" alt=""></div>
                     <div class="block_slider_it"><img src="img/layer-49.png" alt=""></div>
-                    <!-- <div class="block_slider_it"><img src="img/layer-58.png" alt=""></div> -->
-                    <!-- <div class="block_slider_it"><img src="img/layer-58.png" alt=""></div> -->
                 </div>
                 <div class="block_form">
                     <div class="content">
@@ -86,8 +87,7 @@
                             <div class="item_button">
                                 <div>отправить</div>
                             </div>
-                            <input class="aaa" type="checkbox" checked>
-                            <div class="lable">Подтверждаю согласие на обработку моих персональных данных</div>
+                            <div class="lable"> <input class="aaa" type="checkbox" checked>Подтверждаю согласие на обработку моих персональных данных</div>
                         </form>
                         <div class="block_form_ps">* Если требуется отправить чертеж, перейдите на <a href="#"><span>форму заказа</span></a></div>
                     </div>
@@ -158,17 +158,18 @@
                         <div class="about_our_equip__item">
                             <div class="about_our_equip__item_text">
                                 <h2>Наша продукция</h2>
-                                <div class="equip about_our_equip__item_slide">
-                                    <div>
+                                <div class="equip about_our_equip__item_slide owl-carousel owl-theme">
+                                    <div class="equip1">
                                         <img src="img/layer-38.png" alt="">
                                     </div>
-                                    <div>
+                                    <div class="equip1">
                                         <img src="img/layer-39.png" alt="">
                                     </div>
-                                    <div>
+                                    <div class="equip1">
                                         <img src="img/layer-38.png" alt="">
                                     </div>
                                 </div>
+                                <div class="slide-prev"></div> <div class="slide-next"></div>
                             </div>
                         </div>
                     </div>
@@ -316,8 +317,9 @@
     </div>
 </body>
 <script src="js/tabs.js"></script>
+<script src="js/owl.carousel.js"></script>
 <script src="js/zoomify.min.js"></script>
-<script src="js/slick.js"></script>
+<!-- <script src="js/slick.js"></script> -->
 <script src="js/script.js"></script>
 
 </html>
