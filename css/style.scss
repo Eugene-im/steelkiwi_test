@@ -263,6 +263,7 @@ header {
             right: 0px;
             margin-top: 42px;
             background: $pr_color_n_o;
+            box-sizing: border-box;
             ul li {
                 padding: 1%;
                 list-style-type: disc;
@@ -343,12 +344,50 @@ main {
                 height: auto;
                 transform: skewX(0);
             }
+            input[type=checkbox].css-checkbox {
+                width: auto;
+                height: auto;
+                transform: skewX(0);
+                position: absolute;
+                z-index: -1000;
+                left: -1000px;
+                overflow: hidden;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                width: 1px;
+                margin: -1px;
+                padding: 0;
+                border: 0;
+            }
+            input[type=checkbox].css-checkbox + label.css-label {
+                padding-left: 31px;
+                height: 26px;
+                display: inline-block;
+                line-height: 14px;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                font-size: 15px;
+                vertical-align: middle;
+                cursor: pointer;
+                // height:auto;
+            }
+            input[type=checkbox].css-checkbox:checked + label.css-label {
+                background-position: 0 -26px;
+            }
+            label.css-label {
+                background-image: url(../img/check.png);
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
             .bbb {
                 box-sizing: border-box;
-                transform: skewX(16.5deg);
                 float: left;
                 height: 41px;
-                margin: 0.4%;
+                margin: 0.4% 0.8% 0.8% 0;
                 max-width: 197px;
                 width: 100%;
                 padding: 14px 20px 13px 10px;
@@ -367,7 +406,7 @@ main {
             }
             .item_button {
                 float: left;
-                margin: 0.4%;
+                margin: 0.4% 0.8% 0.8% 0;
                 >div {
                     font-size: 25px;
                     font-weight: 500;
@@ -782,6 +821,15 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
             }
         }
     }
+    main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .guarantee {
+        margin: 23px auto 59px;
+    }
+    main .about .about_what_we_can {
+        margin: 0 0 61px;
+    }
+    main .about .about_what_we_can .about_what_we_can__item {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -793,6 +841,10 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
     }
     main .block_form form .form_title_l1 {
         font-size: 23px;
+        margin: 0 0 5px 0;
+    }
+    main .block_form form .form_title_l2 {
+        margin: 0 0 5px 0;
     }
     main .block_form form .bbb {
         width: 99%;
@@ -822,10 +874,14 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
         color: rgba(0, 0, 0, 1);
         font-size: 14px;
         margin: 0px auto 2px;
+        line-height: 85%;
+        padding:2px 0 0;
         a {
             color: rgba(0, 0, 0, 1);
         }
     }
+            em{text-decoration:underline !important;}
+
     main .block_form form .ps2 {
         display: none;
     }

@@ -519,6 +519,7 @@ header .header_menu .menu_320_list {
   right: 0px;
   margin-top: 42px;
   background: #ff8400;
+  box-sizing: border-box;
 }
 header .header_menu .menu_320_list ul li {
   padding: 1%;
@@ -604,14 +605,51 @@ main .block_form form .aaa {
       -ms-transform: skewX(0);
           transform: skewX(0);
 }
+main .block_form form input[type=checkbox].css-checkbox {
+  width: auto;
+  height: auto;
+  -webkit-transform: skewX(0);
+      -ms-transform: skewX(0);
+          transform: skewX(0);
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+main .block_form form input[type=checkbox].css-checkbox + label.css-label {
+  padding-left: 31px;
+  height: 26px;
+  display: inline-block;
+  line-height: 14px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+main .block_form form input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -26px;
+}
+main .block_form form label.css-label {
+  background-image: url(../img/check.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 main .block_form form .bbb {
   box-sizing: border-box;
-  -webkit-transform: skewX(16.5deg);
-      -ms-transform: skewX(16.5deg);
-          transform: skewX(16.5deg);
   float: left;
   height: 41px;
-  margin: 0.4%;
+  margin: 0.4% 0.8% 0.8% 0;
   max-width: 197px;
   width: 100%;
   padding: 14px 20px 13px 10px;
@@ -628,7 +666,7 @@ main .block_form form .bbb {
 }
 main .block_form form .item_button {
   float: left;
-  margin: 0.4%;
+  margin: 0.4% 0.8% 0.8% 0;
 }
 main .block_form form .item_button > div {
   font-size: 25px;
@@ -1053,6 +1091,18 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
   main .about .about_what_we_can .about_what_we_can__item .what_we_can__item_img {
     display: none;
   }
+
+  main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .guarantee {
+    margin: 23px auto 59px;
+  }
+
+  main .about .about_what_we_can {
+    margin: 0 0 61px;
+  }
+
+  main .about .about_what_we_can .about_what_we_can__item {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 480px) {
   .zoomify {
@@ -1067,6 +1117,11 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
 
   main .block_form form .form_title_l1 {
     font-size: 23px;
+    margin: 0 0 5px 0;
+  }
+
+  main .block_form form .form_title_l2 {
+    margin: 0 0 5px 0;
   }
 
   main .block_form form .bbb {
@@ -1098,9 +1153,15 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
     color: black;
     font-size: 14px;
     margin: 0px auto 2px;
+    line-height: 85%;
+    padding: 2px 0 0;
   }
   main .block_form form .ps1 a {
     color: black;
+  }
+
+  em {
+    text-decoration: underline !important;
   }
 
   main .block_form form .ps2 {
