@@ -274,6 +274,10 @@ ul.cap li {
   cursor: pointer;
 }
 
+.vvv:hover {
+  text-decoration: underline;
+}
+
 #triangle {
   width: 0;
   height: 0;
@@ -349,6 +353,29 @@ header .header_menu ul li {
   text-transform: uppercase;
   color: white;
 }
+header .header_menu .menu_320 {
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+header .header_menu .menu_320_list {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  background: #ff8400;
+  width: 320px;
+  height: 250px;
+  padding: 2% 1%;
+}
+header .header_menu .menu_320_list ul li {
+  padding: 1%;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+header .header_menu .menu_320_list ul li:hover {
+  text-decoration: underline;
+  list-style-type: circle;
+}
 
 main {
   float: left;
@@ -372,7 +399,7 @@ main .block_form {
   float: left;
   box-sizing: border-box;
   margin-top: -190px;
-  z-index: 99999999999;
+  z-index: 9999;
   position: absolute;
 }
 main .block_form form {
@@ -622,6 +649,48 @@ main .our_customers .menu_tabs #tabs #tabs-4 .our_customers_logo img {
   right: 0;
   position: absolute;
   margin: auto;
+}
+main .our_customers .menu_acordeon_320 {
+  display: none;
+}
+main .our_customers .menu_acordeon_320 .menu_acordeon_320_it {
+  float: left;
+  width: 100%;
+}
+main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_it__title {
+  background-color: #fdc029;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: -1px;
+  padding: 18px 14px 18px 8px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "pfdintextcondpro-bold";
+  font-size: 22px;
+}
+main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_it__title .title_arrow {
+  float: right;
+  cursor: pointer;
+}
+main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_it__title .title_arrow img {
+  width: 100%;
+  height: auto;
+}
+main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_it__text {
+  background-color: white;
+  display: none;
+}
+main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_it__text .our_customers_logo {
+  text-align: center;
+  padding: 1%;
+}
+main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .display_on {
+  display: block;
+}
+main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .rotate {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 footer {

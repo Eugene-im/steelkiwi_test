@@ -75,6 +75,11 @@ ul.cap li {
     cursor: pointer;
 }
 
+.vvv:hover {
+    // background-color: rgba(255, 78, 0, 1);
+    text-decoration: underline;
+}
+
 #triangle {
     width: 0;
     height: 0;
@@ -148,6 +153,30 @@ header {
                 color: rgb(255, 255, 255);
             }
         }
+        .menu_320 {
+            display: none;
+            float: right;
+            cursor: pointer;
+        }
+        .menu_320_list {
+            display: none;
+            position: absolute;
+            z-index: 9999;
+            background: $pr_color_n_o;
+            width: 320px;
+            height: 250px;
+            padding: 2% 1%;
+            ul li {
+                padding: 1%;
+                list-style-type: disc;
+                list-style-position: inside;
+            }
+            ul li:hover {
+    text-decoration: underline;
+                // background-color: rgba(255, 78, 0, 1);
+                list-style-type: circle;
+            }
+        }
     }
 }
 
@@ -162,7 +191,6 @@ main {
                 img {
                     width: 136%;
                     height: 100%;
-
                 }
             }
         }
@@ -177,7 +205,7 @@ main {
         float: left;
         box-sizing: border-box;
         margin-top: -190px;
-        z-index: 99999999999;
+        z-index: 9999;
         position: absolute;
         form {
             // width: 83.5%;
@@ -307,7 +335,7 @@ main {
                             position: absolute;
                             left: 46%;
                             top: 0;
-                            padding:0;
+                            padding: 0;
                             border-radius: 0;
                             background-color: transparent;
                             margin-top: -24px;
@@ -323,7 +351,7 @@ main {
                             position: absolute;
                             left: 46%;
                             top: 100%;
-                                                    padding:0;
+                            padding: 0;
                             border-radius: 0;
                             background-color: transparent;
                         }
@@ -438,6 +466,56 @@ main {
                             margin: auto;
                         }
                     }
+                }
+            }
+        }
+        .menu_acordeon_320 {
+            display: none;
+            .menu_acordeon_320_it {
+                float: left;
+                width: 100%;
+                .menu_acordeon_320_it__title {
+                    background-color: rgba(253, 192, 41, 1);
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                    margin-top: -1px;
+                    padding: 18px 14px 18px 8px;
+                    box-sizing: border-box;
+                    text-transform: uppercase;
+                    font-family: "pfdintextcondpro-bold";
+                    font-size: 22px;
+                    // float: left;
+                    // text-align:justify;
+                    .title_arrow {
+                        float: right;
+                        cursor: pointer;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                        // width: 0px;
+                        //            height: 0px;
+                        //            border-left: 9.5px solid transparent;
+                        //            border-right: 9.5px solid transparent;
+                        //            border-bottom: none;
+                        //            border-top: 17px solid #ff9701;
+                    }
+                }
+                .menu_acordeon_320_it__text {
+                    background-color: rgba(255, 255, 255, 1);
+                    // transition:2s;
+                    display: none;
+                    .our_customers_logo {
+                        text-align: center;
+                        padding: 1%;
+                    }
+                }
+                .display_on {
+                    display: block;
+                    // transition:2s;
+                }
+                .rotate {
+                    transform: rotate(180deg);
                 }
             }
         }
