@@ -196,15 +196,6 @@ li {
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0%;
-  }
-
-  .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
-    width: 100%;
-  }
-}
 .z-shadow {
   position: fixed;
   top: 0;
@@ -600,6 +591,12 @@ main .block_form form .lable {
   float: left;
   width: 100%;
 }
+main .block_form form .ps1 {
+  display: none;
+}
+main .block_form form .ps2 {
+  display: block;
+}
 main .block_form form .aaa {
   width: auto;
   height: auto;
@@ -608,15 +605,15 @@ main .block_form form .aaa {
           transform: skewX(0);
 }
 main .block_form form .bbb {
+  box-sizing: border-box;
   -webkit-transform: skewX(16.5deg);
       -ms-transform: skewX(16.5deg);
           transform: skewX(16.5deg);
   float: left;
-  height: 12px;
+  height: 41px;
   margin: 0.4%;
-  width: 165px;
-  display: inline-block;
-  box-sizing: content-box;
+  max-width: 197px;
+  width: 100%;
   padding: 14px 20px 13px 10px;
   border: 1px solid #4e5659;
   font-size: 20px;
@@ -663,6 +660,8 @@ main .about .about_what_we_can .about_what_we_can__item {
   margin-top: 50px;
   display: inline-block;
   vertical-align: middle;
+  padding: 2%;
+  box-sizing: border-box;
 }
 main .about .about_what_we_can .about_what_we_can__item .item_text {
   margin: 27px 0;
@@ -684,6 +683,8 @@ main .about .about_our_equip {
 }
 main .about .about_our_equip .about_our_equip__item {
   margin-top: 50px;
+  padding: 0% 3%;
+  box-sizing: border-box;
 }
 main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text h2 {
   text-align: center;
@@ -841,17 +842,18 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it {
 main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_it__title {
   background-color: #fdc029;
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  margin-top: -1px;
-  padding: 18px 14px 18px 8px;
+  padding: 18px 29px 18px 8px;
   box-sizing: border-box;
   text-transform: uppercase;
   font-family: "pfdintextcondpro-bold";
   font-size: 22px;
+  position: relative;
 }
 main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_it__title .title_arrow {
-  float: right;
+  position: absolute;
   cursor: pointer;
+  right: 2%;
+  top: 39%;
 }
 main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_it__title .title_arrow img {
   width: 100%;
@@ -859,6 +861,7 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_
 }
 main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_it__text {
   background-color: white;
+  border-top: 1px solid black;
   display: none;
 }
 main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .menu_acordeon_320_it__text .our_customers_logo {
@@ -912,6 +915,22 @@ footer .footer_feedback .feedback_phone {
 footer .footer_feedback .feedback_phone a {
   color: white;
 }
+footer .cap2 {
+  display: none;
+}
+
+main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
+  padding: 18px 14px 18px 8px;
+}
+
+.ttt {
+  height: 30px;
+  border-top: 1px solid black;
+}
+
+.ps1 {
+  display: none;
+}
 
 @media (max-width: 1024px) {
   main .block_form form {
@@ -950,6 +969,50 @@ footer .footer_feedback .feedback_phone a {
 
   main .our_customers .menu_acordeon_320 {
     display: block;
+  }
+}
+@media (max-width: 850px) {
+  footer .cap2 {
+    display: block;
+  }
+
+  footer .footer_logo,
+  footer .footer_menu,
+  footer .footer_place,
+  footer .footer_feedback,
+  footer .footer_feedback .feedback_phone {
+    float: none;
+    margin: 1% auto;
+  }
+
+  footer .footer_logo {
+    display: none;
+  }
+
+  footer .footer_menu {
+    margin: 18px auto 36px;
+  }
+  footer .footer_menu ul li {
+    margin: 1% auto;
+  }
+
+  footer .footer_feedback {
+    margin: 0 auto 35px;
+  }
+
+  footer .footer_place {
+    margin: 0 auto 18px;
+  }
+
+  footer .cap2_it {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  footer ul.cap {
+    display: none;
   }
 }
 @media (max-width: 750px) {
@@ -993,9 +1056,96 @@ footer .footer_feedback .feedback_phone a {
 }
 @media (max-width: 480px) {
   .zoomify {
-    -webkit-transform: scale(2) translate(0%);
-        -ms-transform: scale(2) translate(0%);
-            transform: scale(2) translate(0%);
+    -webkit-transform: scale(1.4) translate(0%);
+        -ms-transform: scale(1.4) translate(0%);
+            transform: scale(1.4) translate(0%);
+  }
+
+  main .block_form form .item_button {
+    width: 99%;
+  }
+
+  main .block_form form .form_title_l1 {
+    font-size: 23px;
+  }
+
+  main .block_form form .bbb {
+    width: 99%;
+    max-width: none;
+  }
+
+  main .block_form .block_form_ps {
+    display: none;
+    width: 77%;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0 auto;
+    float: none;
+    overflow: hidden;
+  }
+
+  main .about .span_4_of_12 {
+    width: 100%;
+  }
+  main .about .span_8_of_12 {
+    width: 100%;
+  }
+
+  main .block_form form .ps1 {
+    display: block;
+    color: black;
+    font-size: 14px;
+    margin: 0px auto 2px;
+  }
+  main .block_form form .ps1 a {
+    color: black;
+  }
+
+  main .block_form form .ps2 {
+    display: none;
+  }
+
+  main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .equip {
+    margin: 14px auto 0;
+  }
+
+  main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-prev {
+    border-bottom: 9.5px solid transparent;
+    border-top: 9.5px solid transparent;
+    border-left: none;
+    border-right: 17px solid #ff9701;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto auto -19px;
+  }
+
+  main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-prev:hover {
+    border-right-color: #ff4e00;
+    border-bottom-color: transparent;
+  }
+
+  main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-next {
+    border-bottom: 9.5px solid transparent;
+    border-top: 9.5px solid transparent;
+    border-left: 17px solid #ff9701;
+    border-right: none;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto -19px auto auto;
+  }
+
+  main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-next:hover {
+    border-left-color: #ff4e00;
+    border-top-color: transparent;
+  }
+
+  main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text h2 {
+    text-align: left;
   }
 }
 

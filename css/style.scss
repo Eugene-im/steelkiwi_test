@@ -332,21 +332,25 @@ main {
                 float: left;
                 width: 100%;
             }
+            .ps1 {
+                display: none;
+            }
+            .ps2 {
+                display: block;
+            }
             .aaa {
                 width: auto;
                 height: auto;
                 transform: skewX(0);
             }
             .bbb {
+                box-sizing: border-box;
                 transform: skewX(16.5deg);
                 float: left;
-                height: 12px;
+                height: 41px;
                 margin: 0.4%;
-                width: 165px;
-                display: inline-block;
-                -webkit-box-sizing: content-box;
-                -moz-box-sizing: content-box;
-                box-sizing: content-box;
+                max-width: 197px;
+                width: 100%;
                 padding: 14px 20px 13px 10px;
                 border: 1px solid rgb(78, 86, 89);
                 font-size: 20px;
@@ -395,6 +399,8 @@ main {
                 margin-top: 50px;
                 display: inline-block;
                 vertical-align: middle;
+                padding: 2%;
+                box-sizing: border-box;
                 .item_text {
                     margin: 27px 0;
                 }
@@ -416,6 +422,8 @@ main {
             margin-top: 12px;
             .about_our_equip__item {
                 margin-top: 50px;
+                padding: 0% 3%;
+                box-sizing: border-box;
                 .about_our_equip__item_text {
                     h2 {
                         text-align: center
@@ -572,16 +580,18 @@ main {
                 .menu_acordeon_320_it__title {
                     background-color: rgba(253, 192, 41, 1);
                     border-top: 1px solid black;
-                    border-bottom: 1px solid black;
-                    margin-top: -1px;
-                    padding: 18px 14px 18px 8px;
+                    padding: 18px 29px 18px 8px;
                     box-sizing: border-box;
                     text-transform: uppercase;
                     font-family: "pfdintextcondpro-bold";
                     font-size: 22px;
+                    position: relative;
                     .title_arrow {
-                        float: right;
+                        position: absolute;
+                        // float: right;
                         cursor: pointer;
+                        right: 2%;
+                        top: 39%;
                         img {
                             width: 100%;
                             height: auto;
@@ -590,6 +600,7 @@ main {
                 }
                 .menu_acordeon_320_it__text {
                     background-color: rgba(255, 255, 255, 1);
+                    border-top: 1px solid black;
                     display: none;
                     .our_customers_logo {
                         text-align: center;
@@ -644,6 +655,22 @@ footer {
             }
         }
     }
+    .cap2 {
+        display: none
+    }
+}
+
+main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
+    padding: 18px 14px 18px 8px;
+}
+
+.ttt {
+    height: 30px;
+    border-top: 1px solid black;
+}
+
+.ps1 {
+    display: none
 }
 
 @media (max-width: 1024px) {
@@ -676,6 +703,46 @@ footer {
     }
     main .our_customers .menu_acordeon_320 {
         display: block;
+    }
+}
+
+@media (max-width: 850px) {
+    footer .cap2 {
+        display: block
+    }
+    footer .footer_logo,
+    footer .footer_menu,
+    footer .footer_place,
+    footer .footer_feedback,
+    footer .footer_feedback .feedback_phone {
+        float: none;
+        margin: 1% auto;
+    }
+    footer .footer_logo {
+        display: none
+    }
+    footer .footer_menu {
+        margin: 18px auto 36px;
+        ul li {
+            margin: 1% auto;
+        }
+    }
+    footer .footer_feedback {
+        margin: 0 auto 35px;
+    }
+    footer .footer_place {
+        margin: 0 auto 18px
+    }
+    footer .cap2_it {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        margin: 0 auto
+    }
+    footer {
+        ul.cap {
+            display: none;
+        }
     }
 }
 
@@ -719,6 +786,82 @@ footer {
 
 @media (max-width: 480px) {
     .zoomify {
-        transform: scale(2) translate(0%);
+        transform: scale(1.4) translate(0%);
+    }
+    main .block_form form .item_button {
+        width: 99%
+    }
+    main .block_form form .form_title_l1 {
+        font-size: 23px;
+    }
+    main .block_form form .bbb {
+        width: 99%;
+        max-width: none;
+    }
+    main .block_form .block_form_ps {
+        display: none;
+        width: 77%;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+        float: none;
+        overflow: hidden;
+    }
+    main .about {
+        .span_4_of_12 {
+            width: 100%
+        }
+        .span_8_of_12 {
+            width: 100%
+        }
+    }
+    main .block_form form .ps1 {
+        display: block;
+        color: rgba(0, 0, 0, 1);
+        font-size: 14px;
+        margin: 0px auto 2px;
+        a {
+            color: rgba(0, 0, 0, 1);
+        }
+    }
+    main .block_form form .ps2 {
+        display: none;
+    }
+    main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .equip {
+        margin: 14px auto 0;
+    }
+    main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-prev {
+        border-bottom: 9.5px solid transparent;
+        border-top: 9.5px solid transparent;
+        border-left: none;
+        border-right: 17px solid #ff9701;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto auto auto -19px;
+    }
+    main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-prev:hover {
+        border-right-color: #ff4e00;
+        border-bottom-color: transparent;
+    }
+    main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-next {
+        border-bottom: 9.5px solid transparent;
+        border-top: 9.5px solid transparent;
+        border-left: 17px solid #ff9701;
+        border-right: none;
+        left: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto -19px auto auto;
+    }
+    main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text .about_our_equip__item_slide .owl-next:hover {
+        border-left-color: #ff4e00;
+        border-top-color: transparent;
+    }
+    main .about .about_our_equip .about_our_equip__item .about_our_equip__item_text h2 {
+        text-align: left;
     }
 }
