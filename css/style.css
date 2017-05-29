@@ -13,11 +13,6 @@
   font-family: "pfdintextcondpro-regular";
   src: url("../fonts/pfdintextcondpro-regular-webfont.ttf");
 }
-/* font-family: "pfdintextcondpro-italic"; */
-@font-face {
-  font-family: "pfdintextcondpro-italic";
-  src: url("../fonts/pfdintextcomppro-lightitalic.ttf");
-}
 /* font-family: "RobotoBold"; */
 @font-face {
   font-family: "pfdintextcondpro-bold";
@@ -1158,10 +1153,6 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
   }
   main .block_form form .ps1 a {
     color: black;
-  }
-
-  em {
-    text-decoration: underline !important;
   }
 
   main .block_form form .ps2 {
