@@ -187,8 +187,12 @@ ul.cap li {
 header {
     float: left;
     .header_logo {
+        width: 100%;
         float: left;
         margin: 17px 0 23px;
+        img {
+            width: 100%;
+        }
     }
     .header_place {
         float: left;
@@ -252,11 +256,13 @@ header {
         .menu_320_list {
             display: none;
             position: absolute;
-            z-index: 9999;
-            background: $pr_color_n_o;
+            z-index: 99999;
             width: 320px;
-            height: 250px;
-            padding: 2% 1%;
+            height: auto;
+            padding: 1% 2%;
+            right: 0px;
+            margin-top: 42px;
+            background: $pr_color_n_o;
             ul li {
                 padding: 1%;
                 list-style-type: disc;
@@ -273,6 +279,7 @@ header {
 main {
     float: left;
     .slider {
+        position: relative;
         .block_slider {
             .block_slider_it {
                 max-width: 320px;
@@ -291,19 +298,17 @@ main {
     }
     .block_form {
         width: 100%;
-        height: 150px;
         float: left;
         box-sizing: border-box;
-        margin-top: -190px;
         z-index: 9999;
         position: absolute;
+        bottom: 0;
+        left: 0;
         form {
             padding: 20px 16px 16px;
-            // float: left;
             transform: skewX(-16.5deg);
             background-color: rgba(255, 255, 255, .8);
             box-sizing: border-box;
-            // margin: 0 7%;
             width: 100%;
             max-width: 885.3px;
             margin: 0 auto;
@@ -332,14 +337,12 @@ main {
                 height: auto;
                 transform: skewX(0);
             }
-            input {
+            .bbb {
                 transform: skewX(16.5deg);
                 float: left;
                 height: 12px;
                 margin: 0.4%;
                 width: 165px;
-            }
-            .bbb {
                 display: inline-block;
                 -webkit-box-sizing: content-box;
                 -moz-box-sizing: content-box;
@@ -349,7 +352,6 @@ main {
                 font-size: 20px;
                 font-family: "pfdintextcondpro-regular";
                 text-transform: uppercase;
-                // font: normal 20px/normal "Times New Roman", Times, serif;
                 color: rgb(43, 42, 40);
                 -o-text-overflow: clip;
                 text-overflow: clip;
@@ -387,7 +389,7 @@ main {
     .about {
         float: left;
         .about_what_we_can {
-            float: left;
+            float: right;
             margin: -7px 0 92px;
             .about_what_we_can__item {
                 margin-top: 50px;
@@ -399,6 +401,9 @@ main {
                 .what_we_can__item_img {
                     display: inline-block;
                     vertical-align: middle;
+                    img {
+                        width: 100%;
+                    }
                 }
                 .what_we_can__item_text {
                     display: inline-block;
@@ -407,7 +412,7 @@ main {
             }
         }
         .about_our_equip {
-            float: left;
+            float: right;
             margin-top: 12px;
             .about_our_equip__item {
                 margin-top: 50px;
@@ -585,7 +590,6 @@ main {
                 }
                 .menu_acordeon_320_it__text {
                     background-color: rgba(255, 255, 255, 1);
-                    // transition:2s;
                     display: none;
                     .our_customers_logo {
                         text-align: center;
@@ -594,7 +598,6 @@ main {
                 }
                 .display_on {
                     display: block;
-                    // transition:2s;
                 }
                 .rotate {
                     transform: rotate(180deg);
@@ -643,9 +646,79 @@ footer {
     }
 }
 
-@media (max-width: 1006px) {
+@media (max-width: 1024px) {
+    main .block_form form {
+        width: 100%;
+    }
+    main .block_form .content {
+        padding: 0 0;
+    }
+    main .block_form form,
+    main .block_form form > div,
+    main .block_form form .aaa,
+    main .block_form form .bbb {
+        transform: skewX(0deg);
+    }
+    main .about .about_what_we_can {
+        margin: 7px 0 92px
+    }
+    .xxx {
+        width: 30%
+    }
+    .yyy {
+        width: 17%
+    }
+}
 
-    //         main .slider.span_12_of_12 .block-form {
-    //             transform: skewX(-16.5deg);
-    // }
+@media (max-width: 920px) {
+    main .our_customers .menu_tabs {
+        display: none;
+    }
+    main .our_customers .menu_acordeon_320 {
+        display: block;
+    }
+}
+
+@media (max-width: 750px) {
+    header .header_place {
+        display: none;
+    }
+    header .header_menu .cap {
+        display: none;
+    }
+    header .header_menu .menu_320 {
+        display: block;
+        padding: 15px 22px 14px 1%;
+    }
+    header .header_feedback .feedback_phone {
+        widows: 77%;
+        a {
+            font-size: 21px;
+        }
+    }
+    header .header_feedback .feedback_button {
+        width: 136px;
+        height: 26px;
+        div {
+            font-size: 16px;
+        }
+    }
+    main .block_form .block_form_ps {
+        float: left;
+        margin-right: 0px;
+        margin-left: 3%
+    }
+    main .about {
+        .about_what_we_can {
+            .about_what_we_can__item .what_we_can__item_img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .zoomify {
+        transform: scale(2) translate(0%);
+    }
 }

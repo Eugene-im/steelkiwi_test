@@ -451,8 +451,12 @@ header {
   float: left;
 }
 header .header_logo {
+  width: 100%;
   float: left;
   margin: 17px 0 23px;
+}
+header .header_logo img {
+  width: 100%;
 }
 header .header_place {
   float: left;
@@ -517,11 +521,13 @@ header .header_menu .menu_320 {
 header .header_menu .menu_320_list {
   display: none;
   position: absolute;
-  z-index: 9999;
-  background: #ff8400;
+  z-index: 99999;
   width: 320px;
-  height: 250px;
-  padding: 2% 1%;
+  height: auto;
+  padding: 1% 2%;
+  right: 0px;
+  margin-top: 42px;
+  background: #ff8400;
 }
 header .header_menu .menu_320_list ul li {
   padding: 1%;
@@ -535,6 +541,9 @@ header .header_menu .menu_320_list ul li:hover {
 
 main {
   float: left;
+}
+main .slider {
+  position: relative;
 }
 main .slider .block_slider .block_slider_it {
   max-width: 320px;
@@ -551,12 +560,12 @@ main .line {
 }
 main .block_form {
   width: 100%;
-  height: 150px;
   float: left;
   box-sizing: border-box;
-  margin-top: -190px;
   z-index: 9999;
   position: absolute;
+  bottom: 0;
+  left: 0;
 }
 main .block_form form {
   padding: 20px 16px 16px;
@@ -598,7 +607,7 @@ main .block_form form .aaa {
       -ms-transform: skewX(0);
           transform: skewX(0);
 }
-main .block_form form input {
+main .block_form form .bbb {
   -webkit-transform: skewX(16.5deg);
       -ms-transform: skewX(16.5deg);
           transform: skewX(16.5deg);
@@ -606,8 +615,6 @@ main .block_form form input {
   height: 12px;
   margin: 0.4%;
   width: 165px;
-}
-main .block_form form .bbb {
   display: inline-block;
   box-sizing: content-box;
   padding: 14px 20px 13px 10px;
@@ -649,7 +656,7 @@ main .about {
   float: left;
 }
 main .about .about_what_we_can {
-  float: left;
+  float: right;
   margin: -7px 0 92px;
 }
 main .about .about_what_we_can .about_what_we_can__item {
@@ -664,12 +671,15 @@ main .about .about_what_we_can .about_what_we_can__item .what_we_can__item_img {
   display: inline-block;
   vertical-align: middle;
 }
+main .about .about_what_we_can .about_what_we_can__item .what_we_can__item_img img {
+  width: 100%;
+}
 main .about .about_what_we_can .about_what_we_can__item .what_we_can__item_text {
   display: inline-block;
   vertical-align: middle;
 }
 main .about .about_our_equip {
-  float: left;
+  float: right;
   margin-top: 12px;
 }
 main .about .about_our_equip .about_our_equip__item {
@@ -901,6 +911,92 @@ footer .footer_feedback .feedback_phone {
 }
 footer .footer_feedback .feedback_phone a {
   color: white;
+}
+
+@media (max-width: 1024px) {
+  main .block_form form {
+    width: 100%;
+  }
+
+  main .block_form .content {
+    padding: 0 0;
+  }
+
+  main .block_form form,
+  main .block_form form > div,
+  main .block_form form .aaa,
+  main .block_form form .bbb {
+    -webkit-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+
+  main .about .about_what_we_can {
+    margin: 7px 0 92px;
+  }
+
+  .xxx {
+    width: 30%;
+  }
+
+  .yyy {
+    width: 17%;
+  }
+}
+@media (max-width: 920px) {
+  main .our_customers .menu_tabs {
+    display: none;
+  }
+
+  main .our_customers .menu_acordeon_320 {
+    display: block;
+  }
+}
+@media (max-width: 750px) {
+  header .header_place {
+    display: none;
+  }
+
+  header .header_menu .cap {
+    display: none;
+  }
+
+  header .header_menu .menu_320 {
+    display: block;
+    padding: 15px 22px 14px 1%;
+  }
+
+  header .header_feedback .feedback_phone {
+    widows: 77%;
+  }
+  header .header_feedback .feedback_phone a {
+    font-size: 21px;
+  }
+
+  header .header_feedback .feedback_button {
+    width: 136px;
+    height: 26px;
+  }
+  header .header_feedback .feedback_button div {
+    font-size: 16px;
+  }
+
+  main .block_form .block_form_ps {
+    float: left;
+    margin-right: 0px;
+    margin-left: 3%;
+  }
+
+  main .about .about_what_we_can .about_what_we_can__item .what_we_can__item_img {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .zoomify {
+    -webkit-transform: scale(2) translate(0%);
+        -ms-transform: scale(2) translate(0%);
+            transform: scale(2) translate(0%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
