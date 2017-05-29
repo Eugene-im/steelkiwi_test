@@ -1,7 +1,6 @@
 @import 'reset';
 @import 'grid';
 @import 'variables';
-
 .z-shadow {
     position: fixed;
     top: 0;
@@ -12,7 +11,7 @@
     height: 100%;
     display: none;
     z-index: 1500;
-    background: rgba(0,0,0 ,.3);
+    background: rgba(0, 0, 0, .3);
 }
 
 .zoomed {
@@ -20,7 +19,7 @@
     cursor: pointer;
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
-    z-index:99999;
+    z-index: 99999;
 }
 
 .zoom {
@@ -43,64 +42,57 @@
     z-index: 1501;
 }
 
-
 .animated.flipOutX,
 .animated.flipOutY {
-  animation-duration: .75s;
+    animation-duration: .75s;
 }
+
 @keyframes flipOutX {
-  from {
-    transform: perspective(400px);
-  }
-
-  30% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    opacity: 1;
-  }
-
-  to {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    opacity: 0;
-  }
+    from {
+        transform: perspective(400px);
+    }
+    30% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        opacity: 1;
+    }
+    to {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
 }
 
 .flipOutX {
-  animation-name: flipOutX;
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+    animation-name: flipOutX;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
 }
 
-
 @keyframes flipInX {
-  from {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    transform: perspective(400px);
-  }
+    from {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    to {
+        transform: perspective(400px);
+    }
 }
 
 .flipInX {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  animation-name: flipInX;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-name: flipInX;
 }
 
 .item_button {
@@ -188,6 +180,7 @@ ul.cap li {
     margin: 44px auto 0;
     display: none;
 }
+
 
 /*index_style*/
 
@@ -306,13 +299,15 @@ main {
         position: absolute;
         form {
             padding: 20px 16px 16px;
-            float: left;
+            // float: left;
             transform: skewX(-16.5deg);
             background-color: rgba(255, 255, 255, .8);
             box-sizing: border-box;
-            margin: 0 7%;
+            // margin: 0 7%;
             width: 100%;
             max-width: 885.3px;
+            margin: 0 auto;
+            overflow: hidden;
             >div {
                 transform: skewX(16.5deg);
             }
@@ -646,4 +641,11 @@ footer {
             }
         }
     }
+}
+
+@media (max-width: 1006px) {
+
+    //         main .slider.span_12_of_12 .block-form {
+    //             transform: skewX(-16.5deg);
+    // }
 }
