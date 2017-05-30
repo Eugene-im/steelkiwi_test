@@ -168,19 +168,6 @@ ul.cap li {
     text-decoration: underline;
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 23.5px solid transparent;
-    border-right: 23.5px solid transparent;
-    border-top: 23.5px solid rgb(253, 192, 41);
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 44px auto 0;
-    display: none;
-}
-
 
 /*index_style*/
 
@@ -573,18 +560,34 @@ main {
                     float: left;
                     text-align: center;
                     margin: 0 0.6% 43px;
-                    a div {
-                        text-align: center;
-                        color: rgb(0, 0, 0);
-                        font-family: "pfdintextcondpro-bold";
-                        font-size: 22px;
-                        text-transform: uppercase;
+                    a {
+                        >div {
+                            text-align: center;
+                            color: rgb(0, 0, 0);
+                            font-family: "pfdintextcondpro-bold";
+                            font-size: 22px;
+                            text-transform: uppercase;
+                        }
+                        .triangle {
+                            width: 0;
+                            height: 0;
+                            border-left: 23.5px solid transparent;
+                            border-right: 23.5px solid transparent;
+                            border-top: 23.5px solid rgb(253, 192, 41);
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: 44px auto 0;
+                            display: none;
+                        }
                     }
                 }
                 ul li.ui-tabs-active {
-                    a>div {
-                        font-family: "pfdintextcondpro-light";
-                        #triangle {
+                    a {
+                        >div {
+                            font-family: "pfdintextcondpro-light";
+                        }
+                        .triangle {
                             display: block;
                         }
                     }
@@ -875,12 +878,11 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
         font-size: 14px;
         margin: 0px auto 2px;
         line-height: 85%;
-        padding:2px 0 0;
+        padding: 2px 0 0;
         a {
             color: rgba(0, 0, 0, 1);
         }
     }
-
     main .block_form form .ps2 {
         display: none;
     }

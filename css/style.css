@@ -419,19 +419,6 @@ ul.cap li {
   text-decoration: underline;
 }
 
-.triangle {
-  width: 0;
-  height: 0;
-  border-left: 23.5px solid transparent;
-  border-right: 23.5px solid transparent;
-  border-top: 23.5px solid #fdc029;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 44px auto 0;
-  display: none;
-}
-
 /*index_style*/
 header {
   float: left;
@@ -826,17 +813,29 @@ main .our_customers .menu_tabs #tabs ul li {
   text-align: center;
   margin: 0 0.6% 43px;
 }
-main .our_customers .menu_tabs #tabs ul li a div {
+main .our_customers .menu_tabs #tabs ul li a > div {
   text-align: center;
   color: black;
   font-family: "pfdintextcondpro-bold";
   font-size: 22px;
   text-transform: uppercase;
 }
+main .our_customers .menu_tabs #tabs ul li a .triangle {
+  width: 0;
+  height: 0;
+  border-left: 23.5px solid transparent;
+  border-right: 23.5px solid transparent;
+  border-top: 23.5px solid #fdc029;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 44px auto 0;
+  display: none;
+}
 main .our_customers .menu_tabs #tabs ul li.ui-tabs-active a > div {
   font-family: "pfdintextcondpro-light";
 }
-main .our_customers .menu_tabs #tabs ul li.ui-tabs-active a > div #triangle {
+main .our_customers .menu_tabs #tabs ul li.ui-tabs-active a .triangle {
   display: block;
 }
 main .our_customers .menu_tabs #tabs #tabs-1,
