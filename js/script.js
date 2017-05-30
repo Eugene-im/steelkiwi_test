@@ -13,6 +13,9 @@ $(document).ready(function() {
         },
         1000:{
             items:5,
+        },
+        1600:{
+            items:8,
         }
     }
     });
