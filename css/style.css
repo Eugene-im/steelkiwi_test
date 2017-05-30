@@ -1034,6 +1034,7 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
 
   footer .footer_place {
     margin: 0 auto 18px;
+    max-width: 235px;
   }
 
   footer .cap2_it {
@@ -1062,7 +1063,7 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
   }
 
   header .header_feedback .feedback_phone {
-    widows: 77%;
+    width: 83%;
   }
   header .header_feedback .feedback_phone a {
     font-size: 21px;

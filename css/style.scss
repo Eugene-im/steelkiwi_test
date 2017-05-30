@@ -773,7 +773,8 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
         margin: 0 auto 35px;
     }
     footer .footer_place {
-        margin: 0 auto 18px
+        margin: 0 auto 18px;
+        max-width:235px;
     }
     footer .cap2_it {
         width: 100%;
@@ -800,7 +801,7 @@ main .our_customers .menu_acordeon_320 .menu_acordeon_320_it .fff {
         padding: 15px 22px 14px 1%;
     }
     header .header_feedback .feedback_phone {
-        widows: 77%;
+        width: 83%;
         a {
             font-size: 21px;
         }
