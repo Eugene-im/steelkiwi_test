@@ -278,8 +278,8 @@ li {
 .flipOutX {
   -webkit-animation-name: flipOutX;
           animation-name: flipOutX;
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
 }
 
 @-webkit-keyframes flipInX {
@@ -340,8 +340,8 @@ li {
   }
 }
 .flipInX {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
   -webkit-animation-name: flipInX;
           animation-name: flipInX;
 }
@@ -419,7 +419,7 @@ ul.cap li {
   text-decoration: underline;
 }
 
-#triangle {
+.triangle {
   width: 0;
   height: 0;
   border-left: 23.5px solid transparent;
